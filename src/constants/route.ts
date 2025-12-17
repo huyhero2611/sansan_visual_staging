@@ -7,6 +7,7 @@ export const ROUTES = {
   GALLERY: '/gallery',
   ABOUT_US: '/about-us',
   CONTACT_US: '/contact-us',
+  PRIVACY_POLICY: '/privacy-policy',
 }
 
 export const PAGE_TITLES = {
@@ -16,6 +17,7 @@ export const PAGE_TITLES = {
   GALLERY: 'Gallery',
   ABOUT_US: 'About Us',
   CONTACT_US: 'Contact Us',
+  PRIVACY_POLICY: 'Privacy Policy',
 } as const
 
 export const createPageTitle = (page: string) => `${page} | Sansan`

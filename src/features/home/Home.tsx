@@ -1,4 +1,6 @@
+import { Button } from '@/components/ui/button'
 import {
+  ArrowRightIcon,
   ArrowRightLeftIcon,
   BuildingIcon,
   ClockIcon,
@@ -9,6 +11,7 @@ import {
   HouseIcon,
   ImageIcon,
   PackageIcon,
+  QuoteIcon,
   SettingsIcon,
   ThumbsUpIcon,
   UsersIcon,
@@ -16,6 +19,7 @@ import {
   XIcon,
   ZapIcon,
 } from 'lucide-react'
+import Image from 'next/image'
 
 const listService = [
   {
@@ -139,6 +143,35 @@ const listWhyUs = [
   },
 ]
 
+const mockImages = [
+  'https://picsum.photos/id/10/400',
+  'https://picsum.photos/id/11/400',
+  'https://picsum.photos/id/12/400',
+  'https://picsum.photos/id/13/400',
+  'https://picsum.photos/id/14/400',
+]
+
+const listCustomer = [
+  {
+    imageUrl: 'https://picsum.photos/id/10/400',
+    name: 'Willbert Duke',
+    review:
+      '“ I was hesitant at first, but virtual staging made a huge difference in presenting my property. The professionally designed images helped buyers visualize the potential, and I received multiple offers in no time. ”',
+  },
+  {
+    imageUrl: 'https://picsum.photos/id/10/400',
+    name: 'Jennifer Lee',
+    review:
+      "“ Virtual staging exceeded my expectations. The photos showcased my property's best features, and the results were amazing. I had a quick sale and even got a higher price than I had hoped for. Highly recommend it! ”",
+  },
+  {
+    imageUrl: 'https://picsum.photos/id/10/400',
+    name: 'Bobby Kim',
+    review:
+      "“ I couldn't believe how cost-effective and efficient virtual staging was. The transformed photos of my property were so convincing that potential buyers thought the furniture was real. It made all the difference in selling my home. ”",
+  },
+]
+
 export default function Home() {
   return (
     <div className="">
@@ -182,6 +215,60 @@ export default function Home() {
               ))}
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="container mx-auto py-20">
+        <div className="flex flex-col gap-10">
+          <h1 className="text-5xl font-bold">Who we are</h1>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div className="w-full lg:max-w-[540px] flex flex-col gap-4">
+              <p className="text-lg">
+                Welcome to SanSan Studio, your trusted source for Virtual Staging and Real Estate
+                solutions. We are passionate about providing you with high-quality content designed
+                to enhance your virtual staging experience. Our focus is on delivering top-tier
+                Virtual Staging services, bolstered by our unwavering commitment to dependability
+                and effective product promotion. We hope you find our services as enjoyable as we
+                find providing them to you.
+              </p>
+              <Button className="rounded-sm">
+                See more <ArrowRightIcon />
+              </Button>
+            </div>
+
+            <div className="w-full lg:max-w-[540px] flex flex-col gap-4 relative">
+              <div className="absolute h-full w-1/2 top-0 right-[-20px] bg-[#a8c5e2] z-[-1]" />
+              <QuoteIcon className="size-12 text-gray-500" />
+              <p className="text-[28px]">
+                <i>
+                  "We are building a fire, and everyday we train, we add more fuel. At just the
+                  right moment, we light the match."
+                </i>
+              </p>
+              <i className="text-xl text-gray-500">Founder, SanSan Studio</i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="overflow-x-auto flex">
+        {mockImages.map((image, index) => (
+          <Image key={index} src={image} alt="" width={400} height={400} />
+        ))}
+      </div>
+
+      <div className="container py-32 mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 place-items-center">
+          {listCustomer.map((item) => (
+            <div
+              key={item.name}
+              className="flex flex-col gap-4 bg-[#d1d1d347] rounded-2xl p-8 items-center w-full lg:max-w-[360px]"
+            >
+              <Image src={item.imageUrl} alt="" width={80} height={80} className="rounded-full" />
+              <h3 className="text-2xl font-bold">{item.name}</h3>
+              <p>{item.review}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>

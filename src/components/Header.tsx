@@ -4,12 +4,11 @@ import { ROUTES } from '@/constants/route'
 import { cx } from 'class-variance-authority'
 import Image from 'next/image'
 import Link from 'next/link'
-import { usePathname, useRouter } from 'next/navigation'
+import { usePathname } from 'next/navigation'
 
 const navItems = [{ name: 'Home', href: ROUTES.HOME }]
 
 export default function Header() {
-  const router = useRouter()
   const pathname = usePathname()
 
   return (
