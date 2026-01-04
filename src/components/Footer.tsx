@@ -37,7 +37,7 @@ export default function Footer() {
   return (
     <div className="">
       <div className="bg-[#0e2c49] text-white">
-        <div className="container mx-auto py-10">
+        <div className="md:px-20 px-10 mx-auto py-10">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 place-content-center">
             <div className="flex flex-col gap-4">
               <p className="text-2xl">SanSan Studio</p>
@@ -83,7 +83,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="bg-[#020000]">
-        <div className="container mx-auto py-2">
+        <div className="md:px-20 px-10 mx-auto py-2">
           <p className="text-white">SanSan Studio © 2025. All rights reserved.</p>
         </div>
       </div>

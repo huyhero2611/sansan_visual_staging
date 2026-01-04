@@ -144,11 +144,12 @@ const listWhyUs = [
 ]
 
 const mockImages = [
-  'https://picsum.photos/id/10/400',
-  'https://picsum.photos/id/11/400',
-  'https://picsum.photos/id/12/400',
-  'https://picsum.photos/id/13/400',
-  'https://picsum.photos/id/14/400',
+  'https://picsum.photos/id/15/400',
+  'https://picsum.photos/id/16/400',
+  'https://picsum.photos/id/17/400',
+  'https://picsum.photos/id/21/400',
+  'https://picsum.photos/id/19/400',
+  'https://picsum.photos/id/20/400',
 ]
 
 const listCustomer = [
@@ -175,7 +176,7 @@ const listCustomer = [
 export default function Home() {
   return (
     <div className="">
-      <div className="container mx-auto py-20">
+      <div className="md:px-20 px-10 mx-auto py-20">
         <div className="flex flex-col gap-10">
           <h1 className="text-5xl font-bold">Our Services</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8">
@@ -191,18 +192,18 @@ export default function Home() {
       </div>
 
       <div className="bg-gray-800 py-20">
-        <div className="flex justify-center gap-20">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {metricData.map((item, index) => (
             <div key={index} className="flex flex-col gap-0 items-center">
-              <p className="text-[80px] font-bold text-[#709aa8]">{item.num}</p>
-              <p className="font-bold text-white text-xl">{item.title}</p>
+              <p className="md:text-[80px] text-[60px] font-bold text-[#709aa8]">{item.num}</p>
+              <p className="font-bold text-white md:text-xl text-lg">{item.title}</p>
             </div>
           ))}
         </div>
       </div>
 
       <div className="bg-[#1c8eff]">
-        <div className="container mx-auto py-20 text-[#eaeaea]">
+        <div className="md:px-20 px-10 mx-auto py-20 text-[#eaeaea]">
           <div className="flex flex-col gap-10">
             <h1 className="text-5xl font-bold">Why Us</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -218,7 +219,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container mx-auto py-20">
+      <div className="md:px-20 px-10 mx-auto py-20">
         <div className="flex flex-col gap-10">
           <h1 className="text-5xl font-bold">Who we are</h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -226,7 +227,9 @@ export default function Home() {
               <p className="text-lg">
                 Welcome to SanSan Studio, your trusted source for Virtual Staging and Real Estate
                 solutions. We are passionate about providing you with high-quality content designed
-                to enhance your virtual staging experience. Our focus is on delivering top-tier
+                to enhance your virtual staging experience.
+                <br />
+                Our focus is on delivering top-tier
                 Virtual Staging services, bolstered by our unwavering commitment to dependability
                 and effective product promotion. We hope you find our services as enjoyable as we
                 find providing them to you.
@@ -257,7 +260,7 @@ export default function Home() {
         ))}
       </div>
 
-      <div className="container py-32 mx-auto">
+      <div className="md:px-20 px-10 py-32 mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 place-items-center">
           {listCustomer.map((item) => (
             <div
