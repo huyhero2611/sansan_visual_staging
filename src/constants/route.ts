@@ -1,32 +1,23 @@
 /* ==================== AWS ROUTES ==================== */
 
 export const ROUTES = {
-  LOGIN: '/login',
-  NEW_PASSWORD_REQUIRED: '/new-password-required',
-  REGISTER: '/register',
-  CONFIRM_REGISTRATION: '/confirm-registration',
-  DASHBOARD: '/',
-  NOTIFICATIONS: '/notifications',
-  AWS_VERIFICATION: '/aws-verification',
-  // INFRASTRUCTURE: '/infrastructure',
-  INFRASTRUCTURE_SETUP: '/infrastructure/setup',
-  ACCOUNT_SETTINGS: '/account/settings',
-  AWS_SERVICES: '/aws-services',
-  SERVICES: '/services',
+  HOME: '/',
+  VISUAL_STAGING: '/visual-staging',
+  VISUAL_RENOVATION: '/visual-renovation',
+  GALLERY: '/gallery',
+  ABOUT_US: '/about-us',
+  CONTACT_US: '/contact-us',
+  PRIVACY_POLICY: '/privacy-policy',
 }
 
 export const PAGE_TITLES = {
-  LOGIN: 'Login',
-  REGISTER: 'Register',
-  NEW_PASSWORD_REQUIRED: 'New Password Required',
-  CONFIRM_REGISTRATION: 'Confirm Registration',
-  DASHBOARD: 'Dashboard',
-  NOTIFICATIONS: 'Notifications',
-  AWS_VERIFICATION: 'AWS Verification',
-  INFRASTRUCTURE_SETUP: 'Infrastructure Setup',
-  ACCOUNT_SETTINGS: 'Account Settings',
-  AWS_SERVICES: 'AWS Services',
-  SERVICES: 'Services',
+  HOME: 'Home',
+  VISUAL_STAGING: 'Visual Staging',
+  VISUAL_RENOVATION: 'Visual Renovation',
+  GALLERY: 'Gallery',
+  ABOUT_US: 'About Us',
+  CONTACT_US: 'Contact Us',
+  PRIVACY_POLICY: 'Privacy Policy',
 } as const
 
-export const createPageTitle = (page: string) => `${page} | AWS Infrastructure Automation`
+export const createPageTitle = (page: string) => `${page} | Sansan`
