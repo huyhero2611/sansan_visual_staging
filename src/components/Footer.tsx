@@ -84,7 +84,9 @@ export default function Footer() {
       </div>
       <div className="bg-[#020000]">
         <div className="md:px-20 px-10 mx-auto py-2">
-          <p className="text-white">SanSan Studio © 2025. All rights reserved.</p>
+          <p className="text-white">
+            SanSan Studio © {new Date().getFullYear()}. All rights reserved.
+          </p>
         </div>
       </div>
     </div>
