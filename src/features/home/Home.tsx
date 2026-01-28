@@ -1,279 +1,413 @@
 import { Button } from '@/components/ui/button'
 import {
   ArrowRightIcon,
-  ArrowRightLeftIcon,
-  BuildingIcon,
   ClockIcon,
   EarthIcon,
   EraserIcon,
-  GemIcon,
   HandshakeIcon,
   HouseIcon,
   ImageIcon,
   PackageIcon,
   QuoteIcon,
-  SettingsIcon,
+  SparklesIcon,
+  StarIcon,
   ThumbsUpIcon,
   UsersIcon,
   WandSparklesIcon,
-  XIcon,
   ZapIcon,
+  CheckCircleIcon,
 } from 'lucide-react'
 import Image from 'next/image'
 
 const listService = [
   {
-    icon: <HouseIcon className="size-12 text-gray-500" />,
+    icon: <HouseIcon className="size-8 text-blue-600" />,
     title: 'Visual Staging',
     description:
-      'Powerful real estate marketing tool in which a home is staged virtually using advanced staging software.',
+      'Transform empty spaces into beautifully furnished homes that captivate potential buyers.',
+    featured: true,
   },
   {
-    icon: <WandSparklesIcon className="size-12 text-gray-500" />,
+    icon: <WandSparklesIcon className="size-8 text-purple-600" />,
     title: 'Virtual Renovation',
+    description: 'Reimagine properties with stunning renovations before any physical work begins.',
+    featured: true,
+  },
+  {
+    icon: <ImageIcon className="size-8 text-green-600" />,
+    title: 'HDR Photography',
+    description: 'Professional imagery that showcases your property in the best possible light.',
+  },
+  {
+    icon: <PackageIcon className="size-8 text-orange-600" />,
+    title: '3D Virtual Tours',
     description:
-      'Virtual renovation and remodeling allow you to reimagine and renovate property from start to finish without the time and resources required for a real-world renovation.',
+      'Immersive 360° experiences that let buyers explore every corner of your property.',
   },
   {
-    icon: <ImageIcon className="size-12 text-gray-500" />,
-    title: 'HDR',
-    description:
-      'Experience the pinnacle of real estate imagery—refined for speed, consistency, and uncompromising quality.',
-  },
-  {
-    icon: <PackageIcon className="size-12 text-gray-500" />,
-    title: 'Matterport Virtual Staging',
-    description:
-      'Virtual staging of matterport 3D virtual tours or matterport virtual staging is the process of transforming an empty, unfurnished matterport virtual tour of a property into a tasteful furnishing that allows your buyers to visualize the property through interactive 3d walkthroughs.',
-  },
-  {
-    icon: <ZapIcon className="size-12 text-gray-500" />,
-    title: 'Ambient Flash',
-    description:
-      'Authenticity refined. Experience true-to-life colors and razor-sharp clarity through our advanced Ambient Flash blending.',
-  },
-  {
-    icon: <XIcon className="size-12 text-gray-500" />,
-    title: 'Occupied to Vacant',
-    description: 'Remove dated or cluttered furnishings from your listing images.',
-  },
-  {
-    icon: <ArrowRightLeftIcon className="size-12 text-gray-500" />,
-    title: 'Day To Dusk',
-    description: 'Turn daylight home photos into eye catching dusk images.',
-  },
-  {
-    icon: <EraserIcon className="size-12 text-gray-500" />,
-    title: 'Object Removal',
-    description: 'Remove unwanted or distracting items from your listing photos.',
-  },
-  {
-    icon: <SettingsIcon className="size-12 text-gray-500" />,
+    icon: <ZapIcon className="size-8 text-yellow-600" />,
     title: 'Image Enhancement',
-    description: 'Brighten, sharpen, balance, and remove reflections in your listing photos.',
+    description: 'Perfect your photos with professional editing and color correction.',
   },
   {
-    icon: <BuildingIcon className="size-12 text-gray-500" />,
-    title: 'Floor Plan',
-    description: 'Create accurate representations and spatial arrangement of the rooms.',
-  },
-  {
-    icon: <GemIcon className="size-12 text-gray-500" />,
-    title: '360° Virtual Tours',
-    description:
-      'Create a beautifully immersive virtual tour of your listing using 360 degree images.',
+    icon: <EraserIcon className="size-8 text-red-600" />,
+    title: 'Object Removal',
+    description: 'Clean up your images by removing unwanted elements seamlessly.',
   },
 ]
 
 const metricData = [
   {
-    num: 12575,
-    title: 'Projects Finished',
+    num: '12K+',
+    title: 'Projects Completed',
+    subtitle: 'Successfully delivered',
   },
   {
-    num: 1686,
-    title: 'Satisfied Clients',
+    num: '98%',
+    title: 'Client Satisfaction',
+    subtitle: 'Happy customers',
   },
   {
-    num: 201,
-    title: 'Projects in Progress',
+    num: '24h',
+    title: 'Average Turnaround',
+    subtitle: 'Fast delivery',
   },
   {
-    num: 56,
-    title: 'Team Member',
+    num: '50+',
+    title: 'Team Members',
+    subtitle: 'Expert professionals',
   },
 ]
 
 const listWhyUs = [
   {
-    icon: <UsersIcon className="size-12 text-[#eaeaea]" />,
-    title: 'We Simply Care',
-    description:
-      'We want to get to know you on both a professional and personal level in order to create an atmosphere that fosters a long-term relationship of exceptional service.',
+    icon: <CheckCircleIcon className="size-8 text-white" />,
+    title: 'Quality Guaranteed',
+    description: 'Every project undergoes rigorous quality checks to ensure perfection.',
   },
   {
-    icon: <ClockIcon className="size-12 text-[#eaeaea]" />,
-    title: 'Fast',
-    description:
-      'Our fast delivery speed is one of our standout advantages, with the ability to get your product to you in less than 24 hours after placing an order, ensuring a quick response to all customer needs.',
+    icon: <ClockIcon className="size-8 text-white" />,
+    title: 'Lightning Fast',
+    description: 'Get your transformed images within 24 hours, sometimes even faster.',
   },
   {
-    icon: <ArrowRightLeftIcon className="size-12 text-[#eaeaea]" />,
-    title: 'Satisfaction Guaranteed',
-    description:
-      'Our goal is to achieve 100% satisfaction, with services and solutions that will keep you coming back month after month. Our process ensures that both you and your customers will be satisfied.',
+    icon: <UsersIcon className="size-8 text-white" />,
+    title: 'Dedicated Support',
+    description: 'Personal assistance throughout your entire project journey.',
   },
   {
-    icon: <ThumbsUpIcon className="size-12 text-[#eaeaea]" />,
-    title: 'No Contracts',
-    description:
-      'That’s right! NO CONTRACTS! We want you to do business with us because of our excellent customer service and professional solutions, not by obligation!',
+    icon: <ThumbsUpIcon className="size-8 text-white" />,
+    title: 'Satisfaction Promise',
+    description: "We work until you're completely satisfied with the results.",
   },
   {
-    icon: <HandshakeIcon className="size-12 text-[#eaeaea]" />,
-    title: 'Expert Guidance',
-    description:
-      'We partner with the best architect and solution providers. We believe that the best quality services should be accessible to every clients.',
+    icon: <HandshakeIcon className="size-8 text-white" />,
+    title: 'Expert Team',
+    description: 'Skilled professionals with years of real estate visualization experience.',
   },
   {
-    icon: <EarthIcon className="size-12 text-[#eaeaea]" />,
-    title: 'World-Wide Expertise',
-    description:
-      'We have knowledge of international markets and trends, and our expertise and experience serve customers all over the world.',
+    icon: <EarthIcon className="size-8 text-white" />,
+    title: 'Global Reach',
+    description: 'Serving clients worldwide with localized market expertise.',
   },
-]
-
-const mockImages = [
-  'https://picsum.photos/id/15/400',
-  'https://picsum.photos/id/16/400',
-  'https://picsum.photos/id/17/400',
-  'https://picsum.photos/id/21/400',
-  'https://picsum.photos/id/19/400',
-  'https://picsum.photos/id/20/400',
 ]
 
 const listCustomer = [
   {
     imageUrl: 'https://picsum.photos/id/10/400',
-    name: 'Willbert Duke',
+    name: 'Sarah Mitchell',
+    role: 'Real Estate Agent',
+    rating: 5,
     review:
-      '“ I was hesitant at first, but virtual staging made a huge difference in presenting my property. The professionally designed images helped buyers visualize the potential, and I received multiple offers in no time. ”',
+      'SanSan Studio transformed my listings completely. The virtual staging helped me sell properties 30% faster!',
   },
   {
     imageUrl: 'https://picsum.photos/id/10/400',
-    name: 'Jennifer Lee',
+    name: 'Michael Chen',
+    role: 'Property Developer',
+    rating: 5,
     review:
-      "“ Virtual staging exceeded my expectations. The photos showcased my property's best features, and the results were amazing. I had a quick sale and even got a higher price than I had hoped for. Highly recommend it! ”",
+      'The quality and attention to detail is exceptional. My properties look stunning after their virtual renovations.',
   },
   {
     imageUrl: 'https://picsum.photos/id/10/400',
-    name: 'Bobby Kim',
+    name: 'Emma Rodriguez',
+    role: 'Home Stager',
+    rating: 5,
     review:
-      "“ I couldn't believe how cost-effective and efficient virtual staging was. The transformed photos of my property were so convincing that potential buyers thought the furniture was real. It made all the difference in selling my home. ”",
+      'Fast turnaround and incredible results. My clients are always amazed by the before and after comparisons.',
   },
 ]
 
 export default function Home() {
   return (
-    <div className="">
-      <div className="md:px-20 px-10 mx-auto py-20">
-        <div className="flex flex-col gap-10">
-          <h1 className="text-5xl font-bold">Our Services</h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8">
-            {listService.map(({ icon, title, description }, index) => (
-              <div key={index} className="flex flex-col gap-4">
-                {icon}
-                <h3 className="text-2xl font-bold">{title}</h3>
-                <p>{description}</p>
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="relative bg-linear-to-br from-blue-50 via-white to-purple-50 overflow-hidden">
+        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        <div className="relative md:px-20 px-10 mx-auto py-32">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-5xl md:text-7xl font-bold bg-linear-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent leading-tight mb-6">
+              Where Empty Spaces
+              <br />
+              Become Dream Homes
+            </h1>
+            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+              Professional virtual staging and renovation services that help you sell properties
+              faster and at higher prices. See the transformation before making any physical
+              changes.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold shadow-lg">
+                Get Started Today
+                <ArrowRightIcon className="ml-2 size-5" />
+              </Button>
+              <Button
+                variant="outline"
+                className="border-2 border-gray-300 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-50"
+              >
+                View Portfolio
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Services */}
+      <section className="py-20 bg-white">
+        <div className="md:px-20 px-10 mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Our Premium Services
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Industry-leading virtual solutions designed to make your properties irresistible
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
+            {listService
+              .filter((service) => service.featured)
+              .map((service, index) => (
+                <div
+                  key={index}
+                  className="group relative bg-white border-2 border-gray-100 rounded-3xl p-8 hover:border-blue-200 hover:shadow-2xl transition-all duration-300"
+                >
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-50 to-purple-50 rounded-full -z-10 group-hover:scale-150 transition-transform duration-500"></div>
+                  <div className="relative z-10">
+                    <div className="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-50 transition-colors">
+                      {service.icon}
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h3>
+                    <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
+                    <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-lg">
+                      Learn More
+                      <ArrowRightIcon className="ml-2 size-4" />
+                    </Button>
+                  </div>
+                </div>
+              ))}
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {listService
+              .filter((service) => !service.featured)
+              .map((service, index) => (
+                <div
+                  key={index}
+                  className="bg-gray-50 rounded-2xl p-6 hover:bg-gray-100 transition-colors"
+                >
+                  <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4">
+                    {service.icon}
+                  </div>
+                  <h4 className="text-lg font-semibold text-gray-900 mb-2">{service.title}</h4>
+                  <p className="text-sm text-gray-600 leading-relaxed">{service.description}</p>
+                </div>
+              ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-20 bg-linear-to-r from-blue-600 to-purple-600 text-white">
+        <div className="md:px-20 px-10 mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Trusted by Industry Leaders</h2>
+            <p className="text-blue-100 text-lg max-w-2xl mx-auto">
+              Our track record speaks for itself with thousands of successful projects
+            </p>
+          </div>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            {metricData.map((item, index) => (
+              <div key={index} className="text-center">
+                <div className="text-4xl md:text-5xl font-bold mb-2">{item.num}</div>
+                <div className="text-lg font-semibold mb-1">{item.title}</div>
+                <div className="text-blue-100 text-sm">{item.subtitle}</div>
               </div>
             ))}
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="bg-gray-800 py-20">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-          {metricData.map((item, index) => (
-            <div key={index} className="flex flex-col gap-0 items-center">
-              <p className="md:text-[80px] text-[60px] font-bold text-[#709aa8]">{item.num}</p>
-              <p className="font-bold text-white md:text-xl text-lg">{item.title}</p>
-            </div>
-          ))}
-        </div>
-      </div>
+      {/* Why Choose Us */}
+      <section className="py-20 bg-gray-50">
+        <div className="md:px-20 px-10 mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Why Choose SanSan Studio
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              We combine cutting-edge technology with creative expertise to deliver exceptional
+              results
+            </p>
+          </div>
 
-      <div className="bg-[#1c8eff]">
-        <div className="md:px-20 px-10 mx-auto py-20 text-[#eaeaea]">
-          <div className="flex flex-col gap-10">
-            <h1 className="text-5xl font-bold">Why Us</h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {listWhyUs.map(({ icon, title, description }, index) => (
-                <div key={index} className="flex flex-col gap-4">
-                  {icon}
-                  <h3 className="text-2xl font-bold">{title}</h3>
-                  <p>{description}</p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {listWhyUs.map((item, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <div className="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mb-6">
+                  {item.icon}
                 </div>
-              ))}
-            </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{item.description}</p>
+              </div>
+            ))}
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="md:px-20 px-10 mx-auto py-20">
-        <div className="flex flex-col gap-10">
-          <h1 className="text-5xl font-bold">Who we are</h1>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-            <div className="w-full lg:max-w-[540px] flex flex-col gap-4">
-              <p className="text-lg">
-                Welcome to SanSan Studio, your trusted source for Virtual Staging and Real Estate
-                solutions. We are passionate about providing you with high-quality content designed
-                to enhance your virtual staging experience.
+      {/* About Section */}
+      <section className="py-20 bg-white">
+        <div className="md:px-20 px-10 mx-auto">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+                <QuoteIcon className="size-4" />
+                About SanSan Studio
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                Transforming Real Estate
                 <br />
-                Our focus is on delivering top-tier
-                Virtual Staging services, bolstered by our unwavering commitment to dependability
-                and effective product promotion. We hope you find our services as enjoyable as we
-                find providing them to you.
+                Marketing Since 2020
+              </h2>
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                Welcome to SanSan Studio, your premier destination for virtual staging and real
+                estate visualization. We specialize in transforming empty spaces into stunning,
+                market-ready properties that captivate potential buyers and accelerate sales.
               </p>
-              <Button className="rounded-sm">
-                See more <ArrowRightIcon />
-              </Button>
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                Our team of creative professionals combines artistic vision with technical expertise
+                to deliver exceptional results that help our clients stand out in competitive
+                markets. We're passionate about helping you showcase properties in their best light.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold">
+                  About Us
+                  <ArrowRightIcon className="ml-2 size-5" />
+                </Button>
+                <Button
+                  variant="outline"
+                  className="border-2 border-gray-300 px-8 py-4 rounded-lg font-semibold hover:bg-gray-50"
+                >
+                  Contact Team
+                </Button>
+              </div>
             </div>
 
-            <div className="w-full lg:max-w-[540px] flex flex-col gap-4 relative">
-              <div className="absolute h-full w-1/2 top-0 right-[-20px] bg-[#a8c5e2] z-[-1]" />
-              <QuoteIcon className="size-12 text-gray-500" />
-              <p className="text-[28px]">
-                <i>
-                  "We are building a fire, and everyday we train, we add more fuel. At just the
-                  right moment, we light the match."
-                </i>
-              </p>
-              <i className="text-xl text-gray-500">Founder, SanSan Studio</i>
+            <div className="relative">
+              <div className="aspect-square bg-linear-to-br from-blue-100 to-purple-100 rounded-3xl overflow-hidden">
+                <div className="w-full h-full flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="w-24 h-24 bg-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center">
+                      <span className="text-white text-4xl font-bold">S</span>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="flex items-center justify-center gap-1">
+                        {[...Array(5)].map((_, i) => (
+                          <StarIcon key={i} className="size-5 text-yellow-500 fill-current" />
+                        ))}
+                      </div>
+                      <p className="text-gray-700 font-semibold">SanSan Studio</p>
+                      <p className="text-gray-600">Excellence in Virtual Staging</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-200 rounded-full opacity-50 blur-2xl"></div>
+              <div className="absolute -top-6 -left-6 w-32 h-32 bg-purple-200 rounded-full opacity-50 blur-2xl"></div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="overflow-x-auto flex">
-        {mockImages.map((image, index) => (
-          <Image key={index} src={image} alt="" width={400} height={400} />
-        ))}
-      </div>
+      {/* Testimonials */}
+      <section className="py-20 bg-gray-50">
+        <div className="md:px-20 px-10 mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Client Success Stories
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Hear what our satisfied clients have to say about their experience
+            </p>
+          </div>
 
-      <div className="md:px-20 px-10 py-32 mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 place-items-center">
-          {listCustomer.map((item) => (
-            <div
-              key={item.name}
-              className="flex flex-col gap-4 bg-[#d1d1d347] rounded-2xl p-8 items-center w-full lg:max-w-[360px]"
-            >
-              <Image src={item.imageUrl} alt="" width={80} height={80} className="rounded-full" />
-              <h3 className="text-2xl font-bold">{item.name}</h3>
-              <p>{item.review}</p>
-            </div>
-          ))}
+          <div className="grid md:grid-cols-3 gap-8">
+            {listCustomer.map((item, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <div className="flex items-center gap-1 mb-4">
+                  {[...Array(item.rating)].map((_, i) => (
+                    <StarIcon key={i} className="size-5 text-yellow-500 fill-current" />
+                  ))}
+                </div>
+                <p className="text-gray-700 mb-6 leading-relaxed italic">"{item.review}"</p>
+                <div className="flex items-center gap-4">
+                  <Image
+                    src={item.imageUrl}
+                    alt={item.name}
+                    width={48}
+                    height={48}
+                    className="rounded-full"
+                  />
+                  <div>
+                    <div className="font-semibold text-gray-900">{item.name}</div>
+                    <div className="text-sm text-gray-600">{item.role}</div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-linear-to-r from-blue-600 to-purple-600 text-white">
+        <div className="md:px-20 px-10 mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Transform Your Property?</h2>
+          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+            Join thousands of satisfied clients who have sold their properties faster and at better
+            prices
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-lg text-lg font-semibold shadow-lg">
+              Start Your Project
+              <ArrowRightIcon className="ml-2 size-5" />
+            </Button>
+            <Button
+              variant="outline"
+              className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold"
+            >
+              Schedule Consultation
+            </Button>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
