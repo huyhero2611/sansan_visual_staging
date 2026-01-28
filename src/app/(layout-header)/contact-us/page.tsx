@@ -1,4 +1,5 @@
 import { createPageTitle, PAGE_TITLES } from '@/constants/route'
+import ContactUs from '@/features/contactUs/ContactUs'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -6,5 +7,5 @@ export const metadata: Metadata = {
 }
 
 export default function ContactUsPage() {
-  return <div>Contact Us Page</div>
+  return <ContactUs />
 }

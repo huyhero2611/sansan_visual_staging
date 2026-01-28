@@ -1,4 +1,5 @@
 import { createPageTitle, PAGE_TITLES } from '@/constants/route'
+import AboutUs from '@/features/aboutUs/AboutUs'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -6,5 +7,5 @@ export const metadata: Metadata = {
 }
 
 export default function AboutUsPage() {
-  return <div>About Us Page</div>
+  return <AboutUs />
 }

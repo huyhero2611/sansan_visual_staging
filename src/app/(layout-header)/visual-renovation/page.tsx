@@ -1,4 +1,5 @@
 import { createPageTitle, PAGE_TITLES } from '@/constants/route'
+import VisualRenovation from '@/features/visualRenovation/VisualRenovation'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -6,5 +7,5 @@ export const metadata: Metadata = {
 }
 
 export default function VisualRenovationPage() {
-  return <div>Visual Renovation Page</div>
+  return <VisualRenovation />
 }
