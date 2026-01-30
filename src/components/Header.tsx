@@ -5,6 +5,7 @@ import { cx } from 'class-variance-authority'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import Logo from '@/assets/common/logo.png'
 
 const navItems = [
   { name: 'Home', href: ROUTES.HOME },
@@ -19,14 +20,14 @@ export default function Header() {
   const pathname = usePathname()
 
   return (
-    <header className="w-full bg-cover bg-center bg-no-repeat relative bg-[url('/banner_header_sansan.png')]">
+    <header className="w-full bg-cover bg-center bg-no-repeat relative bg-[url('../assets/common/banner_header_sansan.png')]">
       <div className="absolute inset-0 bg-black/80" />
       <div className="p-8 z-10 relative">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="font-bold text-xl text-white">
             <Link href="/">
-              <Image src="/logo.png" alt="Sansan Logo" width={200} height={100} priority />
+              <Image src={Logo} alt="Sansan Logo" width={200} height={100} priority />
             </Link>
           </div>
 
