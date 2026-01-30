@@ -63,11 +63,11 @@ export default function Header() {
         </div>
 
         {/* Current Page Label */}
-        <div className="mt-8">
+        {/* <div className="mt-8">
           <h1 className="text-[40px] font-bold text-white underline underline-offset-8 decoration-2">
             {navItems.find((item) => item.href === pathname)?.name || 'Home'}
           </h1>
-        </div>
+        </div> */}
       </div>
     </header>
   )
